@@ -1,3 +1,4 @@
+import { FaTrashAlt } from 'react-icons/fa';
 
 function CartSection({ cart, onRemove, onCheckout, totalPrice }) {
   return (
@@ -5,7 +6,7 @@ function CartSection({ cart, onRemove, onCheckout, totalPrice }) {
       <div className="mx-auto mt-10 max-w-3xl rounded-[24px] border border-[#ececf2] bg-white p-6 shadow-[0_16px_32px_rgba(21,20,31,0.05)]">
         <div className="mb-5 flex items-center justify-between border-b border-[#efeff4] pb-4">
           <div>
-            <h3 className="text-2xl font-extrabold">Items in your cart</h3>
+            <h3 className="text-2xl font-extrabold">Your Cart</h3>
             <p className="mt-1 text-sm text-slate-500">Total selected products: {cart.length}</p>
           </div>
           <div className="rounded-full bg-[#f4efff] px-4 py-2 text-sm font-semibold text-[#6c2cff]">
@@ -25,7 +26,7 @@ function CartSection({ cart, onRemove, onCheckout, totalPrice }) {
                 <div key={item.id} className="flex flex-col gap-4 rounded-2xl bg-[#fafafe] p-4 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex items-center gap-4">
                     <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#f3ecff] text-[#6c2cff]">
-                      <Icon />
+                      {/* <Icon /> */}
                     </div>
                     <div>
                       <h4 className="font-bold">{item.name}</h4>
